@@ -14,7 +14,7 @@ app.json.default = lambda o: o.isoformat() if hasattr(o, "isoformat") else str(o
 CORS(app)
 ser = URLSafeTimedSerializer(os.getenv("SECRET_KEY", "change-this-secret"))
 CFG = dict(host=os.getenv("DB_HOST", "localhost"), user=os.getenv("DB_USER", "root"),
-           password=os.getenv("DB_PASSWORD", ""), database=os.getenv("DB_NAME", "gov_portal"))
+           password=os.getenv("DB_PASSWORD", "Ayush@9156"), database=os.getenv("DB_NAME", "gov_portal"))
 
 
 def q(sql, args=(), one=False, commit=False):
